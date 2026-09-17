@@ -38,3 +38,40 @@ nav ul{
     gap: 40px;
     font-size: 30px;
 }
+
+/* how happy  */
+
+section{
+    width: 100%;
+    
+}
+.happy{
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    padding: 100px;
+}
+.nose{
+    width: 1020px;
+    height: 800px;
+}
+h1{
+    font-size: 100px;
+}
+.are{
+    margin-top: 100px;
+    width: 1020px;
+}
+.are p{
+    font-size: 30px;
+    margin-top: 50px;
+}
+button{
+    background-color: rgba(245, 203, 0);
+    border-color: rgba(245, 203, 0);
+    font-size: 30px;
+    margin-top: 50px;
+    height: 70px;
+    width: 230px;
+}
+  
