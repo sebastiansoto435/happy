@@ -259,4 +259,35 @@ button{
 .about button{
     margin-top: 50px;
 }
+/* our team */
+
+.team{
+    padding: 150px 100px;
+}
+
+.contenido-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.imagen-team{
+    width: 1000px;
+    height: 860px;
+}
+
+.texto-team{
+    width: 650px;
+}
+
+.texto-team h2{
+    font-size: 80px;
+}
+
+.texto-team p{
+    font-size: 30px;
+    margin-top: 40px;
+}
+
   
