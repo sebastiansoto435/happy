@@ -289,5 +289,36 @@ button{
     font-size: 30px;
     margin-top: 40px;
 }
+/* try our method */
 
+.method{
+    background-color: rgb(232, 232, 232);
+    padding: 120px 100px;
+}
+
+.contenido-method{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.texto-method{
+    width: 700px;
+}
+
+.texto-method h2{
+    font-size: 80px;
+}
+
+.texto-method p{
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.imagen-method{
+    width: 1000px;
+    height: 920px;
+    object-fit: cover;
+}
   
