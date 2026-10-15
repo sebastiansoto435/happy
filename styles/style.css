@@ -321,4 +321,97 @@ button{
     height: 920px;
     object-fit: cover;
 }
+/* newsletter */
+
+.newsletter{
+    padding: 150px 100px;
+}
+
+.contenido-newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.formulario{
+    width: 850px;
+    padding: 60px;
+    background-color: black;
+    color: white;
+}
+
+.fila-formulario{
+    display: flex;
+    gap: 30px;
+}
+
+.campo{
+    margin-bottom: 25px;
+}
+
+.fila-formulario .campo{
+    flex: 1;
+    min-width: 0px;
+}
+
+.campo label{
+    display: block;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.campo input{
+    display: block;
+    width: 730px;
+    height: 55px;
+    padding: 10px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    font-size: 25px;
+    font-family: inherit;
+}
+
+.fila-formulario input{
+    width: 350px;
+}
+
+.campo textarea{
+    display: block;
+    width: 730px;
+    height: 230px;
+    padding: 10px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    font-size: 25px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.formulario p{
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.texto-newsletter{
+    width: 750px;
+}
+
+.texto-newsletter h2{
+    color: rgba(245, 203, 0);
+    font-size: 75px;
+}
+
+.texto-newsletter p{
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.texto-newsletter button{
+    background-color: black;
+    border-color: black;
+    color: white;
+}
   
