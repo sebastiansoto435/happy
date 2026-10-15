@@ -11,6 +11,7 @@ header{
     color: black;
     padding: 20px;
 }
+
 .logo{
     background-image: url('../assets/assets/logo.png');
     background-size: contain;
@@ -19,19 +20,23 @@ header{
     height: 100px;
     margin-left: 100px;
 }
+
 li{
     list-style: none;
 }
+
 a{
     text-decoration: none;
     color: black;
 }
+
 nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 100px;
 }
+
 .menu{
     display: flex;
     align-items: center;
@@ -39,7 +44,7 @@ nav ul{
     font-size: 30px;
 }
 
-/* how happy  */
+/* how happy */
 
 .how{
     position: relative;
@@ -47,27 +52,33 @@ nav ul{
     height: 1300px;
     z-index: 1;
 }
+
 .happy{
     display: flex;
     justify-content: center;
     gap: 110px;
     padding: 100px;
 }
+
 .nose{
     width: 1020px;
     height: 800px;
 }
+
 h1{
     font-size: 100px;
 }
+
 .are{
     margin-top: 100px;
     width: 1020px;
 }
+
 .are p{
     font-size: 30px;
     margin-top: 50px;
 }
+
 button{
     background-color: rgba(245, 203, 0);
     border-color: rgba(245, 203, 0);
@@ -77,19 +88,145 @@ button{
     width: 230px;
 }
 
-/*  hapiness in numbers  */
+/* happiness in numbers */
 
-.solapa{
+.numbers{
     display: flex;
     justify-content: center;
+    padding-top: 100px;
 }
 
-.caja-encima {
-  position: relative; /* O absolute / fixed */
-  z-index: 999;       /* Un número mayor para elevarlo */
-  background-color: coral;
-  width: 200px;
-  height: 200px;
-  margin-top: -50px;  /* Para forzar el solapamiento */
+.caja-numbers{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    width: 1800px;
+    padding: 80px;
+    background-color: rgb(232, 232, 232);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25);
+}
+
+.texto-numbers{
+    width: 500px;
+}
+
+.texto-numbers h2{
+    color: rgba(245, 203, 0);
+    font-size: 70px;
+}
+
+.texto-numbers p{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.texto-numbers a{
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.graficas{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.graficas img{
+    width: 350px;
+    height: 350px;
+}
+
+/* we can help you */
+
+.help{
+    background-color: rgba(245, 203, 0);
+    margin-top: -160px;
+    padding: 300px 100px 150px;
+}
+
+.contenido-help{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.texto-help{
+    width: 650px;
+}
+
+.texto-help h2{
+    font-size: 80px;
+}
+
+.texto-help p{
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.texto-help button{
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+.imagen-help{
+    width: 1100px;
+    height: 735px;
+    margin-top: 180px;
+}
+
+/* percentage happiness */
+
+.percentage{
+    display: flex;
+    justify-content: center;
+    padding: 150px 100px;
+}
+
+.caja-percentage{
+    display: flex;
+    width: 1800px;
+    background-color: rgb(232, 232, 232);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25);
+}
+
+.imagen-percentage{
+    width: 900px;
+    height: 975px;
+    object-fit: cover;
+}
+
+.texto-percentage{
+    width: 900px;
+    padding: 70px;
+}
+
+.texto-percentage h2{
+    font-size: 80px;
+    color: rgba(245, 203, 0);
+}
+
+.texto-percentage p{
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.texto-percentage button{
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+.grafica-percentage{
+    display: block;
+    width: 350px;
+    height: 350px;
+    margin-top: 60px;
+    margin-left: auto;
 }
   
