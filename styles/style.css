@@ -229,4 +229,34 @@ button{
     margin-top: 60px;
     margin-left: auto;
 }
+/* about us */
+
+.about{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+
+.about h2{
+    color: rgba(245, 203, 0);
+    font-size: 70px;
+}
+
+.about p{
+    width: 1300px;
+    margin: 40px auto;
+    font-size: 30px;
+}
+
+.imagen-about{
+    display: block;
+    width: 1400px;
+    height: 817px;
+    margin: 0px auto;
+}
+
+.about button{
+    margin-top: 50px;
+}
   
