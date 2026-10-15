@@ -444,4 +444,62 @@ button{
     border-color: black;
     color: white;
 }
+/* footer */
+
+footer{
+    background-color: black;
+    color: rgba(245, 203, 0);
+    padding: 100px;
+}
+
+.contenido-footer{
+    width: 1800px;
+    margin: 0px auto;
+}
+
+.logo-footer{
+    width: 150px;
+    height: 112px;
+}
+
+.enlaces-footer{
+    display: flex;
+    gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.columna-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.columna-footer a{
+    color: rgba(245, 203, 0);
+    font-size: 25px;
+}
+
+.base-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid white;
+    padding-top: 40px;
+}
+
+.base-footer p{
+    font-size: 25px;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.redes img{
+    height: 30px;
+    width: auto;
+}
   
