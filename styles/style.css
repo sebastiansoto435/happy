@@ -18,7 +18,7 @@ header{
     background-repeat: no-repeat;
     width: 200px;
     height: 100px;
-    margin-left: 100px;
+    flex-shrink: 0;
 }
 
 li{
@@ -34,13 +34,15 @@ nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 100px;
+    gap: 30px;
 }
 
 .menu{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 40px;
     font-size: 30px;
 }
 
@@ -49,20 +51,23 @@ nav ul{
 .how{
     position: relative;
     width: 100%;
-    height: 1300px;
+    height: auto;
     z-index: 1;
 }
 
 .happy{
     display: flex;
     justify-content: center;
-    gap: 110px;
+    align-items: center;
+    gap: 60px;
     padding: 100px;
 }
 
 .nose{
-    width: 1020px;
-    height: 800px;
+    flex: 1 1 0px;
+    width: 0px;
+    min-width: 0px;
+    height: auto;
 }
 
 h1{
@@ -70,8 +75,9 @@ h1{
 }
 
 .are{
-    margin-top: 100px;
-    width: 1020px;
+    flex: 1 1 0px;
+    width: 0px;
+    min-width: 0px;
 }
 
 .are p{
@@ -86,6 +92,7 @@ button{
     margin-top: 50px;
     height: 70px;
     width: 230px;
+    max-width: 100%;
 }
 
 /* happiness in numbers */
@@ -93,7 +100,7 @@ button{
 .numbers{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding: 100px 40px 0px;
 }
 
 .caja-numbers{
@@ -102,15 +109,18 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
-    width: 1800px;
+    gap: 60px;
+    width: 100%;
+    max-width: 1800px;
+    min-width: 0px;
     padding: 80px;
     background-color: rgb(232, 232, 232);
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25);
 }
 
 .texto-numbers{
-    width: 500px;
+    flex: 1 1 0px;
+    min-width: 0px;
 }
 
 .texto-numbers h2{
@@ -131,13 +141,20 @@ button{
 
 .graficas{
     display: flex;
+    flex: 1 1 0px;
+    min-width: 0px;
     align-items: center;
-    gap: 100px;
+    justify-content: center;
+    gap: 30px;
 }
 
 .graficas img{
-    width: 350px;
-    height: 350px;
+    flex: 1 1 0px;
+    width: 0px;
+    min-width: 0px;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
 }
 
 /* we can help you */
@@ -156,7 +173,9 @@ button{
 }
 
 .texto-help{
-    width: 650px;
+    flex: 1 1 0px;
+    width: 0px;
+    min-width: 0px;
 }
 
 .texto-help h2{
@@ -175,8 +194,11 @@ button{
 }
 
 .imagen-help{
-    width: 1100px;
-    height: 735px;
+    flex: 1 1 0px;
+    width: 0px;
+    min-width: 0px;
+    height: auto;
+    object-fit: contain;
     margin-top: 180px;
 }
 
@@ -190,19 +212,25 @@ button{
 
 .caja-percentage{
     display: flex;
-    width: 1800px;
+    width: 100%;
+    max-width: 1800px;
+    min-width: 0px;
     background-color: rgb(232, 232, 232);
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25);
 }
 
 .imagen-percentage{
-    width: 900px;
-    height: 975px;
+    flex: 1 1 0px;
+    width: 0px;
+    min-width: 0px;
+    height: auto;
     object-fit: cover;
 }
 
 .texto-percentage{
-    width: 900px;
+    flex: 1 1 0px;
+    width: 0px;
+    min-width: 0px;
     padding: 70px;
 }
 
@@ -225,10 +253,12 @@ button{
 .grafica-percentage{
     display: block;
     width: 350px;
-    height: 350px;
+    max-width: 100%;
+    height: auto;
     margin-top: 60px;
     margin-left: auto;
 }
+
 /* about us */
 
 .about{
@@ -244,21 +274,24 @@ button{
 }
 
 .about p{
-    width: 1300px;
+    width: 100%;
+    max-width: 1300px;
     margin: 40px auto;
     font-size: 30px;
 }
 
 .imagen-about{
     display: block;
-    width: 1400px;
-    height: 817px;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
     margin: 0px auto;
 }
 
 .about button{
     margin-top: 50px;
 }
+
 /* our team */
 
 .team{
@@ -273,12 +306,17 @@ button{
 }
 
 .imagen-team{
-    width: 1000px;
-    height: 860px;
+    flex: 1 1 0px;
+    width: 0px;
+    min-width: 0px;
+    height: auto;
+    object-fit: contain;
 }
 
 .texto-team{
-    width: 650px;
+    flex: 1 1 0px;
+    width: 0px;
+    min-width: 0px;
 }
 
 .texto-team h2{
@@ -289,6 +327,7 @@ button{
     font-size: 30px;
     margin-top: 40px;
 }
+
 /* try our method */
 
 .method{
@@ -304,7 +343,9 @@ button{
 }
 
 .texto-method{
-    width: 700px;
+    flex: 1 1 0px;
+    width: 0px;
+    min-width: 0px;
 }
 
 .texto-method h2{
@@ -317,10 +358,13 @@ button{
 }
 
 .imagen-method{
-    width: 1000px;
-    height: 920px;
-    object-fit: cover;
+    flex: 1 1 0px;
+    width: 0px;
+    min-width: 0px;
+    height: auto;
+    object-fit: contain;
 }
+
 /* newsletter */
 
 .newsletter{
@@ -335,7 +379,9 @@ button{
 }
 
 .formulario{
-    width: 850px;
+    flex: 1 1 0px;
+    width: 0px;
+    min-width: 0px;
     padding: 60px;
     background-color: black;
     color: white;
@@ -347,6 +393,7 @@ button{
 }
 
 .campo{
+    min-width: 0px;
     margin-bottom: 25px;
 }
 
@@ -363,7 +410,7 @@ button{
 
 .campo input{
     display: block;
-    width: 730px;
+    width: 100%;
     height: 55px;
     padding: 10px;
     background-color: black;
@@ -374,12 +421,13 @@ button{
 }
 
 .fila-formulario input{
-    width: 350px;
+    width: 100%;
 }
 
 .campo textarea{
     display: block;
-    width: 730px;
+    width: 100%;
+    max-width: 100%;
     height: 230px;
     padding: 10px;
     background-color: black;
@@ -396,7 +444,9 @@ button{
 }
 
 .texto-newsletter{
-    width: 750px;
+    flex: 1 1 0px;
+    width: 0px;
+    min-width: 0px;
 }
 
 .texto-newsletter h2{
@@ -414,6 +464,7 @@ button{
     border-color: black;
     color: white;
 }
+
 /* contact */
 
 .contact{
@@ -433,10 +484,10 @@ button{
 
 .mapa{
     display: block;
-    width: 1800px;
-    height: 800px;
+    width: 100%;
+    max-width: 1800px;
+    height: auto;
     margin: 60px auto 0px;
-    object-fit: cover;
 }
 
 .contact button{
@@ -444,6 +495,7 @@ button{
     border-color: black;
     color: white;
 }
+
 /* footer */
 
 footer{
@@ -453,7 +505,8 @@ footer{
 }
 
 .contenido-footer{
-    width: 1800px;
+    width: 100%;
+    max-width: 1800px;
     margin: 0px auto;
 }
 
@@ -464,6 +517,7 @@ footer{
 
 .enlaces-footer{
     display: flex;
+    flex-wrap: wrap;
     gap: 100px;
     margin-top: 100px;
     margin-bottom: 150px;
@@ -482,8 +536,10 @@ footer{
 
 .base-footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
     border-top: 1px solid white;
     padding-top: 40px;
 }
@@ -502,4 +558,496 @@ footer{
     height: 30px;
     width: auto;
 }
-  
+
+/* permitir que los textos largos se ajusten */
+
+.are,
+.texto-numbers,
+.texto-help,
+.texto-percentage,
+.texto-team,
+.texto-method,
+.texto-newsletter,
+.formulario{
+    overflow-wrap: anywhere;
+}
+
+
+/* HASTA 1279px */
+
+@media (max-width: 1279px){
+
+    .logo{
+        width: 110px;
+        height: 80px;
+    }
+
+    .menu{
+        gap: 30px;
+        font-size: 22px;
+    }
+
+    .happy,
+    .contenido-help,
+    .contenido-team,
+    .contenido-method,
+    .contenido-newsletter{
+        gap: 40px;
+    }
+
+    .happy{
+        padding: 60px 30px;
+    }
+
+    h1{
+        font-size: 52px;
+    }
+
+    .texto-numbers h2,
+    .texto-help h2,
+    .texto-percentage h2,
+    .about h2,
+    .texto-team h2,
+    .texto-method h2,
+    .texto-newsletter h2,
+    .contact h2{
+        font-size: 40px;
+    }
+
+    .are p,
+    .texto-numbers p,
+    .texto-numbers a,
+    .texto-help p,
+    .texto-percentage p,
+    .about p,
+    .texto-team p,
+    .texto-method p,
+    .texto-newsletter p,
+    .contact p{
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    button{
+        width: 160px;
+        height: 50px;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    .numbers{
+        padding: 40px 30px 0px;
+    }
+
+    .caja-numbers{
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .graficas{
+        gap: 20px;
+    }
+
+    .graficas img{
+        max-width: 220px;
+    }
+
+    .help{
+        margin-top: -100px;
+        padding: 170px 30px 70px;
+    }
+
+    .imagen-help{
+        margin-top: 70px;
+    }
+
+    .percentage,
+    .about,
+    .team,
+    .method,
+    .newsletter,
+    .contact{
+        padding: 70px 30px;
+    }
+
+    .texto-percentage{
+        padding: 30px;
+    }
+
+    .grafica-percentage{
+        width: 250px;
+    }
+
+    .formulario{
+        padding: 25px;
+    }
+
+    .fila-formulario{
+        gap: 20px;
+    }
+
+    .campo label,
+    .campo input,
+    .campo textarea{
+        font-size: 20px;
+    }
+
+    .formulario p{
+        font-size: 16px;
+    }
+
+    footer{
+        padding: 60px 30px 30px;
+    }
+
+    .enlaces-footer{
+        gap: 60px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    .columna-footer a,
+    .base-footer p{
+        font-size: 20px;
+    }
+}
+
+
+/* HASTA 920px */
+
+@media (max-width: 920px){
+
+    header{
+        padding: 15px 25px;
+    }
+
+    .logo{
+        width: 90px;
+        height: 65px;
+    }
+
+    .menu{
+        gap: 25px;
+        font-size: 20px;
+    }
+
+    .happy,
+    .contenido-help,
+    .contenido-team,
+    .contenido-method,
+    .contenido-newsletter{
+        gap: 30px;
+    }
+
+    .happy{
+        padding: 50px 25px;
+    }
+
+    h1{
+        font-size: 44px;
+    }
+
+    .texto-numbers h2,
+    .texto-help h2,
+    .texto-percentage h2,
+    .about h2,
+    .texto-team h2,
+    .texto-method h2,
+    .texto-newsletter h2,
+    .contact h2{
+        font-size: 33px;
+    }
+
+    .are p,
+    .texto-numbers p,
+    .texto-numbers a,
+    .texto-help p,
+    .texto-percentage p,
+    .about p,
+    .texto-team p,
+    .texto-method p,
+    .texto-newsletter p,
+    .contact p{
+        font-size: 18px;
+    }
+
+    .numbers{
+        padding: 40px 25px 0px;
+    }
+
+    .caja-numbers{
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .help{
+        padding: 160px 25px 60px;
+    }
+
+    .percentage,
+    .about,
+    .team,
+    .method,
+    .newsletter,
+    .contact{
+        padding: 60px 25px;
+    }
+
+    .texto-percentage{
+        padding: 25px;
+    }
+
+    .grafica-percentage{
+        width: 200px;
+        margin-top: 30px;
+    }
+
+    .fila-formulario{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .campo label,
+    .campo input,
+    .campo textarea{
+        font-size: 18px;
+    }
+
+    .campo input{
+        height: 45px;
+    }
+
+    .campo textarea{
+        height: 170px;
+    }
+
+    footer{
+        padding: 60px 25px 30px;
+    }
+
+    .columna-footer a,
+    .base-footer p{
+        font-size: 18px;
+    }
+}
+
+
+/* HASTA 768px */
+
+@media (max-width: 768px){
+
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu{
+        gap: 30px;
+    }
+
+    .happy,
+    .contenido-help,
+    .contenido-team,
+    .contenido-method,
+    .contenido-newsletter{
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .nose,
+    .are,
+    .texto-help,
+    .imagen-help,
+    .imagen-team,
+    .texto-team,
+    .texto-method,
+    .imagen-method,
+    .formulario,
+    .texto-newsletter{
+        flex: none;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .imagen-help{
+        margin-top: 0px;
+    }
+
+    .caja-numbers{
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    .texto-numbers,
+    .graficas{
+        flex: none;
+        width: 100%;
+    }
+
+    .graficas{
+        max-width: 400px;
+        gap: 30px;
+    }
+
+    .caja-percentage{
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    .imagen-percentage,
+    .texto-percentage{
+        flex: none;
+        width: 100%;
+    }
+
+    .grafica-percentage{
+        width: 200px;
+        margin: 30px auto 0px;
+    }
+
+    .about p,
+    .imagen-about{
+        max-width: 600px;
+    }
+
+    .fila-formulario{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .enlaces-footer{
+        gap: 60px;
+    }
+
+    .redes{
+        gap: 25px;
+    }
+
+    .redes img{
+        height: 21px;
+        width: auto;
+    }
+}
+
+
+/* HASTA 480px */
+
+@media (max-width: 480px){
+
+    header{
+        padding: 15px;
+    }
+
+    .menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .happy{
+        padding: 40px 20px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .texto-numbers h2,
+    .texto-help h2,
+    .texto-percentage h2,
+    .about h2,
+    .texto-team h2,
+    .texto-method h2,
+    .texto-newsletter h2,
+    .contact h2{
+        font-size: 32px;
+    }
+
+    button{
+        width: 150px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .numbers{
+        padding: 40px 20px 0px;
+    }
+
+    .caja-numbers,
+    .texto-percentage{
+        padding: 20px;
+    }
+
+    .graficas{
+        gap: 20px;
+    }
+
+    .help{
+        padding: 150px 20px 50px;
+    }
+
+    .percentage,
+    .about,
+    .team,
+    .method,
+    .newsletter,
+    .contact{
+        padding: 50px 20px;
+    }
+
+    .grafica-percentage{
+        width: 170px;
+    }
+
+    .about button{
+        margin-top: 25px;
+    }
+
+    .formulario{
+        padding: 20px;
+    }
+
+    .fila-formulario{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .campo textarea{
+        height: 150px;
+    }
+
+    .formulario p{
+        font-size: 15px;
+    }
+
+    .mapa{
+        margin-top: 30px;
+    }
+
+    footer{
+        padding: 50px 20px 25px;
+    }
+
+    .logo-footer{
+        width: 90px;
+        height: auto;
+    }
+
+    .enlaces-footer{
+        gap: 35px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .columna-footer a,
+    .base-footer p{
+        font-size: 16px;
+    }
+
+    .base-footer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        padding-top: 25px;
+    }
+}
